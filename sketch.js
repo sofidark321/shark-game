@@ -133,8 +133,8 @@ rectMode(CENTER);
 
   // requin prédateur
   requin = new Boid(width/2, height/2, requinImage);
-  requin.r = 60;
-  requin.maxSpeed = 7;
+  requin.r = 100;
+  requin.maxSpeed = 15;
   requin.maxForce = 0.5;
 }
 //Tank player , shoot bullets
@@ -647,28 +647,34 @@ if (nearest) {
     noLoop();
     displayGameOverScreen();
   }
-  textSize(25); // Set text size
+  textSize(20); // Set text size
   fill(255, 127, 80);
   
    let a = 20; // Small margin from the left edge
    let c;
-    c = height - 500; // Small margin from the bottom edge (100 pixels above)
+    c = height - 600; // Small margin from the bottom edge (100 pixels above)
 
   // Display the instructions
-  text("Game Controls(UPPER CASE):", a, b);
+  textStyle(BOLD);
+  textSize(25); // Set text size
+  text("Game Controls(UPPER CASE):", a, c-20);
+  textStyle(NORMAL);
   fill(255)
   text("Press D for Debug", a, c + 30);
-  text("Press P for Predator", a, c + 60);
-  text("Press K for Kill", a, c + 90);
-  text("Press W for Wander", a, c + 120);
-  text("mouse drag to spawn fish", a, c + 150);
+  text("Press P for Predator", a, c + 70);
+  text("Press K for Kill", a, c + 110);
+  text("Press W for Wander", a, c + 150);
+  text("mouse drag to spawn fish", a, c + 190);
   fill(222, 49, 99);
-  text("Vehicule Controls(lower case):",a,c+180);
-  text("Press w to go up", a, c + 210);
-  text("Press a to go left", a, c + 240);
-  text("Press s to go down", a, c + 270);
-  text("Press d to go right", a, c + 300);
-  text("mouse click to shoot", a, c + 330);
+  textStyle(BOLD);
+  textSize(25); // Set text size
+  text("Vehicule Controls(lower case):",a,c+320);
+  textStyle(NORMAL);
+  text("Press w to go up", a, c + 370);
+  text("Press a to go left", a, c + 410);
+  text("Press s to go down", a, c + 450);
+  text("Press d to go right", a, c + 490);
+  text("mouse click to shoot", a, c + 530);
 
 
 }
