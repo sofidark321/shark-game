@@ -634,8 +634,41 @@ if (nearest) {
     vehicles.splice(index, 1);
   }
 }
+break;
+case"help":
 
+if(keyIsPressed) {
+fill(255, 127, 80);
+let a = 20; // Small margin from the left edge
+let c;
+ c = height -250; // Small margin from the bottom edge (100 pixels above)
 
+// Display the instructions
+textStyle(BOLD);
+textSize(15); // Set text size
+text("Game Controls(UPPER CASE):", a, c-20);
+textStyle(NORMAL);
+textStyle(BOLD);
+textSize(15); // Set text size
+text("Game Controls(UPPER CASE):", a, c-20);
+textStyle(NORMAL);
+fill(255)
+text("Press D for Debug", a, c + 30);
+text("Press P for Predator", a, c + 70);
+text("Press K for Kill", a, c + 110);
+text("Press W for Wander", a, c + 150);
+text("mouse drag to spawn fish", a, c + 190);
+fill(222, 49, 99);
+textStyle(BOLD);
+textSize(15); // Set text size
+text("Vehicule Controls(lower case):",a+250,c-20);
+textStyle(NORMAL);
+text("Press w to go up", a+250, c +30);
+text("Press a to go left", a+250, c +70);
+text("Press s to go down", a+250, c +110);
+text("Press d to go right", a+250, c +150);
+text("mouse click to shoot", a+250, c +190);
+}
 
 }
   requin.edges();
@@ -647,36 +680,18 @@ if (nearest) {
     noLoop();
     displayGameOverScreen();
   }
-  textSize(20); // Set text size
-  fill(255, 127, 80);
-  
+ 
+   fill(255, 127, 80);
    let a = 20; // Small margin from the left edge
    let c;
-    c = height - 600; // Small margin from the bottom edge (100 pixels above)
+    c = height -250; // Small margin from the bottom edge (100 pixels above)
 
   // Display the instructions
   textStyle(BOLD);
-  textSize(25); // Set text size
-  text("Game Controls(UPPER CASE):", a, c-20);
+  textSize(15); // Set text size
+  text("press h for help!:", a, c-50);
   textStyle(NORMAL);
-  fill(255)
-  text("Press D for Debug", a, c + 30);
-  text("Press P for Predator", a, c + 70);
-  text("Press K for Kill", a, c + 110);
-  text("Press W for Wander", a, c + 150);
-  text("mouse drag to spawn fish", a, c + 190);
-  fill(222, 49, 99);
-  textStyle(BOLD);
-  textSize(25); // Set text size
-  text("Vehicule Controls(lower case):",a,c+320);
-  textStyle(NORMAL);
-  text("Press w to go up", a, c + 370);
-  text("Press a to go left", a, c + 410);
-  text("Press s to go down", a, c + 450);
-  text("Press d to go right", a, c + 490);
-  text("mouse click to shoot", a, c + 530);
-
-
+ 
 }
 function displayGameOverScreen() {
   textSize(92);
@@ -744,5 +759,7 @@ function keyPressed() {
   mode = "wander";
 }else if (key === 'K') {
   mode = "kill";
+}else if (key === 'h') {
+  mode ="help";
 }
 }
