@@ -5,7 +5,7 @@
 
 ================================================================================================================================
 
-Bienvenue dans mon projet d'exploration sous-marine. J'ai essayé de créer un environnement qui présente la nature sous-marine : les poissons (boids), les requins (boids avec comportement de chasse), les plongeurs (véhicules), des tanks sous-marins (véhicules tirant des projectiles) et une petite méduse qui suit la cible "The King" (j'ai utilisé votre tête comme cible 😅, un souvenir du king qui nous a fait découvrir le monde de la création des jeux).
+Bienvenue dans mon projet d'exploration sous-marine. J'ai essayé de créer un environnement qui présente la nature sous-marine : les poissons (boids), les requins (boids avec comportement de chasse), les plongeurs (véhicules), des tanks sous-marins (véhicules tirant des projectiles) et une petite méduse qui suit la cible "The King" (un petit souvenir du king qui nous a fait découvrir le monde de la création des jeux).
 
 📖 Description
 Ce jeu, développé avec p5.js, combine plusieurs mécaniques :
