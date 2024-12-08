@@ -134,8 +134,8 @@ rectMode(CENTER);
   // requin prédateur
   requin = new Boid(width/2, height/2, requinImage);
   requin.r = 100;
-  requin.maxSpeed = 15;
-  requin.maxForce = 0.5;
+  requin.maxSpeed = 10;
+  requin.maxForce = 1;
 }
 //Tank player , shoot bullets
 
@@ -697,9 +697,13 @@ function displayGameOverScreen() {
   textSize(92);
   fill(255);
   textAlign(CENTER, CENTER);
+  fill("Red");
+  stroke(0);
+  strokeWeight(5);
   text("Game Over", width / 2, height / 2);
   textSize(32);
-  text(" Score:"+vehicles.length, width / 2, height / 2+60);
+  fill("Red");
+  text("SHARKS WIN", width / 2, height / 2+60);
   textSize(15);
   text("Click to Try Again", width / 2, height / 2 + 120);
   
