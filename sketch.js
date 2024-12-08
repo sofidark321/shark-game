@@ -48,7 +48,7 @@ var p, b = [],
 function preload() {
   // on charge une image de fusée pour le vaisseau
   imageFusee = loadImage('assets/vehicule.png');
-  KingImage = loadImage('./theKing.png');
+  KingImage = loadImage('assets/theKing.png');
   fishImage = loadImage('assets/goldenFish.png');
   requinImage = loadImage('assets/shark.png');
   meduseImage = loadImage('assets/meduse.png');
